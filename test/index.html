@@ -3,18 +3,17 @@
   <meta charset="utf-8">
   <title>Mocha Tests</title>
   <link rel="stylesheet" href="mocha/mocha.css" />
+  <script src="../assets/js/libs/require.js"></script>
+  <script src="mocha/mocha.js"></script>
+  <script src="sinon/sinon.js"></script>
+  <script src="config.js"></script>
 </head>
 <body>
-  <script data-main="config.js"
-    src="../assets/js/libs/require.js"></script>
-  <script type="text/javascript">
-    require(['require', 'use!mocha', 'use!chai', 'use!sinon'], function(require, Mocha, Chai, Sinon) {
-      mocha.setup('bdd');
-
-      require(['../test/test.example'], function(example) {
-        console.log('hello world!');
-      });
-    });
+  <script src="../assets/js/libs/require.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    require([
+      '../test/test.example',
+    ], runMocha);
   </script>
   <div id="mocha"></div>
 </body>
