@@ -1,7 +1,7 @@
 require.config({
     // Base URL relative to the test runner
     // Paths are relative to this
-    baseUrl: '../app/',
+    baseUrl: '../app',
     paths: {
         // Testing libs
         'chai'          : '../test/chai/chai',
@@ -9,7 +9,7 @@ require.config({
         'jquery'        : '../assets/js/libs/jquery',
         'underscore'    : '../assets/js/libs/underscore',
         'backbone'      : '../assets/js/libs/backbone',
-        'use'           : '../assets/js/libs/backbone'
+        'use'           : '../assets/js/plugins/use'
     },
     use: {
         backbone: {
